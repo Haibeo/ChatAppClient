@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Chat App :)</title>
+        <link rel="stylesheet" href="../public/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+        <script src="../public/script.js"></script>
+    </head>
+    <body id="index-container">
+        <div id="entry">
+            <div id="create-room" class="popup">
+                <div id="create-message"></div>
+                <p>Enter room name: </p>
+                <input type="text" id="room-name">
+                <button id="ok">OK</button>
+            </div>
+
+            <div id="user-rooms" class="popup">
+                <p>My rooms </p>
+                <ul>
+                </ul>
+            </div>
+
+            <div id="my-profile" class="popup">
+                <div>My name</div>
+                <div id="my-name"></div>
+            </div>
+
+            <button id="leave-room">
+                Leave 
+            </button>
+            <div id="first">
+                <h1>CHAT APP</h1>
+                <div id="message"></div>
+                <div id="index">
+                    <div class="form-component">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+                    <div class="form-component">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                    </div>
+                    <div class="form-component" id="component-register">
+                        <label for="password">Confirm password</label>
+                        <input type="password" id="password-confirm" name="password" required placeholder="Re-enter password">
+                    </div>
+                    <button id="btn-index">LOG IN</button> 
+                </div>
+                <div id="option"><span id="question">You don't have an account? </span><span id="reg-log">Register</span></div>
+                <div id="credit">@2022HAILE</div>
+            </div>
+            <div id="main-app">
+                <div id="left">
+                    <div id="user-online">
+                        <p>Online Users</p>
+                        <ul id="users">
+                        </ul>
+                    </div>
+                    <div id="separator"></div>
+                    <div id="available-room">
+                        <p>Joinable Rooms</p>
+                        <div id="create" class="icon"><img src="../public/outline_add_black_36dp.png"></div>
+                        <ul id="rooms">
+                        </ul>
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="menu">
+                        <h5 id="room-id">ROOM: General</h5>
+                        <div id="profile" class="icon"><img src="../public/outline_account_circle_white_36dp.png" alt=""></div>
+                        <div id="list" class="icon"><img src="../public/outline_groups_white_36dp.png" alt=""></div>
+                        <div id="general" class="icon"><img src="../public/outline_language_white_36dp.png" alt=""></div>
+                        <div id="logout" class="icon"><img src="../public/outline_logout_white_36dp.png" alt=""></div>
+                    </div>
+                    <div class="chat-area">
+                    </div>
+                    <div id="send-message">
+                        <input type="text" id="text-message" name="text-message">
+                        <img src="../public/outline_send_white_36dp.png" alt="" id="send-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
