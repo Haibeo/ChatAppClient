@@ -2,4 +2,4 @@
 
 HTML + CSS + jQuery
 
-link: https://haibeo.github.io/ChatAppClient/
+link: https://haile1501.github.io/ChatAppClient/
